@@ -11,8 +11,8 @@ import kotlinx.android.synthetic.main.custom_toast.view.*
 class CustomToast {
 
     fun showToast(context: Context, mensagem: String){
-        
-        var inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+
+        val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
 
         val customToastroot =  inflater.inflate(R.layout.custom_toast, null)
 
